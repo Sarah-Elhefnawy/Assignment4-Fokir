@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Start of navbar */
+nav {
+    background-color: transparent;
+    position: static;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    /* z-index: 99; */
+}
+.nav-logo a {
+    color: #FF305B;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 25px;
+    padding: 18px 0;
+    float: left;
+}
+.nav-content {
+    float: right;
+}
+.nav-content a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+.nav-content li {
+    float: left;
+    padding: 20px 10px 0;
+}
+.nav-content a:hover {
+    color: #FF305B;
+    transition: all 0.5s;
+}
+/* End of navbar */
+
+/* Start of header */
+header {
+    min-height: 100vh;
+    text-align: center;
+    background:  linear-gradient(rgba(0, 0, 0, 0.804) 0% 100%),url('./../images/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-content {
+    margin: auto;
+    line-height: 80px;
+    color: aliceblue;
+    padding-top: 200px;
+    font-size: 25px;
+}
+h1 {
+    color: #FF305B;
+    font-size: 70px;
+    line-height: 77px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.header-content h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 26.4px;
+    font-weight: 600;
+}
+.header-content h4 {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 31.2px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.header-content h4::after {
+    content: "";
+    animation: textTransition 4s infinite ease-in-out;
+    border-right: #FF305B solid;
+}
+@keyframes textTransition {
+    0% {
+      content: "De";
+    }
+    4% {
+      content: "Des";
+    }
+    8% {
+      content: "Desi";
+    }
+    12% {
+      content: "Desig";
+    }
+    16% {
+      content: "Design";
+    }
+    20% {
+      content: "Designe";
+    }
+    24% {
+      content: "Designer";
+    }
+    28% {
+      content: "Designe";
+    }
+    32% {
+      content: "Design";
+    }
+    36% {
+      content: "Desig";
+    }
+    40% {
+      content: "Desi";
+    }
+    44% {
+      content: "Des";
+    }
+    48% {
+      content: "De";
+    }
+    52% {
+      content: "Dev";
+    }
+    56% {
+      content: "Deve";
+    }
+    60% {
+      content: "Devel";
+    }
+    64% {
+      content: "Develo";
+    }
+    68% {
+      content: "Develop";
+    }
+    72% {
+      content: "Develope";
+    }
+    76% {
+      content: "Developer";
+    }
+    80% {
+      content: "Develope";
+    }
+    84% {
+      content: "Develop";
+    }
+    88% {
+      content: "Develo";
+    }
+    92% {
+      content: "Devel";
+    }
+    96% {
+      content: "Deve";
+    }
+    100% {
+      content: "Dev";
+    }
+}
+/* End of header */
