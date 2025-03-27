@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hello i'm Alex Smith, professional Web Designer/Developer">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="./css/fontawesome.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -21,7 +22,6 @@
                 <ul>
                     <li><a href="#"><span style="color:#FF305B;">Home</span></a></li>
                     <li><a href="#About"><span>About</span></a></li>
-                    <li><a href="#"><span>Service</span></a></li>
                     <li><a href="#Services"><span>Service</span></a></li>
                     <li><a href="#"><span>Portfoilo</span></a></li>
                     <li><a href="#"><span>Testimonial</span></a></li>
@@ -39,7 +39,7 @@
             <div class="header-content">
                 <h3>Hello i'm</h3>
                 <h1>Alex Smith</h1>
-                <h4>professional web </h4>
+                <h4>professional web <span id="element"></span></h4>
             </div>
             <!-- <div class="clear-fix"></div> -->
         </div>
@@ -49,11 +49,21 @@
     <!-- Start of About -->
     <section id="About">
         <div class="container">
-            <div class="about-image">
-                <div class="box-empty">
-                    <img class="box-image" src="./images/about.jpg" alt="Developer's picture">
+            <div class="about-box">
+                <div class="porfile-photo">
+                  <img alt="" src="images/about.jpg">
+                  <div class="porfile-overly">
+                    <div class="social-icon">
+                      <ul>
+                        <li><a href="#facebook"><i class="fa-brands fa-solid fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             <div class="about-content">
                 <h2>HELLO,</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -83,6 +93,7 @@
     <section id="Services">
         <div class="container">
             <h2>Our Services</h2>
+            <div class="box"></div>
             <div class="services">
                 <div class="single-service">
                     <i class='fas fa-edit'></i>
@@ -118,6 +129,7 @@
     <section id="Portfolio">
         <div class="container">
             <h2>Our Protfolio</h2>
+            <div class="box"></div>
             <div class="portfolio-buttons">
                 <button class="active">All</button>
                 <button>Graphic</button>
@@ -127,27 +139,48 @@
             <div class="protfolio-cards">
                 <div class="card">
                     <img src="./images/1.jpg" alt="">
+                    <div class="layer">
+                        <i class="fa-solid fa-file-image"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./images/2.jpg" alt="">
+                    <div class="layer">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./images/3.jpg" alt="">
+                    <div class="layer">
+                        <i class="fa-solid fa-file-video"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./images/4.jpg" alt="">
+                    <div class="layer">
+                        <i class="fa-solid fa-file-image"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./images/5.jpg" alt="">
+                    <div class="layer">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
                 </div>
                 <div class="card">
                     <img src="./images/6.jpg" alt="">
+                    <div class="layer">
+                        <i class="fa-solid fa-file-image"></i>
+                    </div>
                 </div>
                 <div class="clear-fix"></div>
             </div>
         </div>
     </section>
     <!-- End of Protfolio -->
+
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

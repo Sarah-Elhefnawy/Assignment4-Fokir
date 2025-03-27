@@ -13,7 +13,29 @@
   clear: both;
 }
 section {
-  padding: 100px 0;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  /* padding: 100px 0; */
+}
+.box {
+  width: 100px;
+  height: 10px;
+  border-top: #FF305B 1px solid;
+  border-bottom: #FF305B 1px solid;
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+.box::after {
+  content: "____________________";
+  /* width: 200px; */
+  position: absolute;
+  bottom: 1px;
+  /* right: 6px; */
+  left: -35px;
+  color: #FF305B;
+  margin: auto;
 }
 
 /* Start of navbar */
@@ -29,7 +51,6 @@ nav {
     color: #FF305B;
     font-size: 24px;
     font-weight: 800;
-    line-height: 25px;
     padding: 18px 0;
     float: left;
 }
@@ -37,11 +58,11 @@ nav {
     float: right;
 }
 .nav-content a {
-    font-size: 16px;
     font-weight: 300;
     color: #FFFFFF;
     line-height: 20px;
     letter-spacing: 0.5px;
+    transition: all 0.5s;
 }
 .nav-content li {
     float: left;
@@ -49,7 +70,6 @@ nav {
 }
 .nav-content a:hover {
     color: #FF305B;
-    transition: all 0.5s;
 }
 /* End of navbar */
 
@@ -66,7 +86,7 @@ header {
     margin: auto;
     line-height: 80px;
     color: aliceblue;
-    padding-top: 200px;
+    padding-top: 25%;
     font-size: 25px;
 }
 h1 {
@@ -90,7 +110,7 @@ h1 {
     font-weight: 300;
     text-transform: capitalize;
 }
-.header-content h4::after {
+/* .header-content h4::after {
     content: "";
     animation: textTransition 4s infinite ease-in-out;
     border-right: #FF305B solid;
@@ -174,47 +194,80 @@ h1 {
     100% {
       content: "Dev";
     }
-}
+} */
 /* End of header */
 
-/* Start of About */
 /* Start of About */ 
 #About {
   padding: 100px 0px 125px;
 }
-.about-image {
+.about-box {
+  border-radius: 5px;
+  box-shadow: 0 0 0 8px #555555 inset;
   float: left;
-  padding-left: 100px;
+  margin-left: 50px;
 }
-.box-empty {
-  aspect-ratio: 2/3;
-  width: 360px;
-  height: 450px;
-  border: #555555 solid 10px;
-  border-radius: 2%;
+.about-box img {
+  width: 100%;
+}
+.porfile-photo {
   position: relative;
+  transform: translateY(24px) translateX(24px);
 }
-.box-image {
+.porfile-overly {
+  background: rgba(0, 0, 0, 0.57);
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
 }
-img.box-image {
-  width: 360px;
-  border-radius: 2%;
+.porfile-photo:hover .porfile-overly {
+  top: 0; 
+  opacity: 1;
+}
+.social-icon {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  opacity: 0; 
+}
+.porfile-photo:hover .social-icon {
+  opacity: 1; 
+}
+.social-icon i:hover {
+  color: #FF305B;
+}
+.about-box .social-icon li {
+  display: inline-block;
+}
+.about-box .social-icon li a {
+  letter-spacing: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: all 5s ease-in-out;
+}
+.about-box .social-icon li a i {
+  transition: all 0.5s ease-in-out;
 }
 .about-content {
   float: right;
   width: 50%;
 }
 .about-content h2 {
-  border-left: #FF305B solid 4px;
   color: #333333;
   font-size: 34px;
   line-height: 22px;
   font-weight: 600;
   padding-left: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
+.about-content h2::before {
+  content: "I";
+  color: #FF305B;
+  padding-right: 15px;
 }
 .about-content {
   color: #555555;
@@ -243,6 +296,10 @@ img.box-image {
   border-radius: 5%;
   margin-top: 10px;
   padding: 10px 24px;
+  transition: all 5s ease-in-out;
+}
+.about-buttons a:hover {
+  background: linear-gradient(#f61845 0% 0%);
 }
 /* End of About */
 
@@ -259,8 +316,7 @@ section h2 {
   line-height: 30px;
   font-weight: 800;
   text-transform: capitalize;
-  margin-bottom: 40px;
-  padding-bottom: 30px;
+  margin-bottom: 25px;
   position: relative;
 }
 .single-service {
@@ -268,9 +324,19 @@ section h2 {
   padding: 40px 15px;
   float: left;
   width: 25%;
+  transition: all 0.5s;
+}
+.single-service:hover {
+  background-color:#fff;
+  color: #000000;
+  box-shadow: 3px 8px 8px 5px #88888870;
+}
+.single-service:hover i {
+  font-size: 40px;
 }
 .single-service i {
   font-size: 36px;
+  transition: all 3s ease-in-out;
   line-height: 16px;
   color: #FF305B;
   margin-bottom: 25px;
@@ -299,17 +365,45 @@ section h2 {
   line-height: 25px;
   font-weight: 400;
 }
+.portfolio-buttons button:hover {
+  color: #FF305B;
+}
 .active {
   color: #FF305B;
 }
 .protfolio-cards {
-  padding: 0 15px;
+  padding: 0 15px 10px;
 }
 .card {
   float: left;
   width: 33.333%;
+  position: relative;
 }
 .card img {
-  width: 90%;
+  width: 100%;
+}
+.layer{
+  background: rgba(0, 0, 0, 0.57);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.layer i {
+  color: #FF305B;
+  font-size: 25px;
+  opacity: 0;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+.card:hover .layer{
+  opacity: 1;
+}
+.card:hover i{
+  opacity: 1;
 }
 /* End of Portfolio */
