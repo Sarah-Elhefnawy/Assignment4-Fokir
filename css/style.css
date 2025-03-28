@@ -407,3 +407,34 @@ section h2 {
   opacity: 1;
 }
 /* End of Portfolio */
+
+/* Start of Numbers */
+.numbers {
+  background-color: #F1F1F1;
+  padding: 100px 0;
+  text-align: center;
+  /* margin: auto; */
+}
+.num {
+  width: 25%;
+  float: left;
+}
+.num i {
+  color: #FF305B;
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.num h3 {
+  font-size: 26px;
+  line-height: 28.6px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.num p {
+  color: #555555;
+  font-size: 16px;
+  line-height: 17.6px;
+  font-weight: 600;
+}
+/* End of Numbers */
