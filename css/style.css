@@ -18,6 +18,15 @@ section {
   font-weight: 400;
   /* padding: 100px 0; */
 }
+section h2 {
+  color: #333333;
+  font-size: 40px;
+  line-height: 30px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  position: relative;
+}
 .box {
   width: 100px;
   height: 10px;
@@ -45,7 +54,7 @@ nav {
     left: 0;
     right: 0;
     /* width: 100%; */
-    /* z-index: 99; */
+    z-index: 99;
 }
 .nav-logo a {
     color: #FF305B;
@@ -310,15 +319,6 @@ h1 {
   padding: 100px 0px 54px;
   text-align: center;
 }
-section h2 {
-  color: #333333;
-  font-size: 40px;
-  line-height: 30px;
-  font-weight: 800;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  position: relative;
-}
 .single-service {
   color: #555555;
   padding: 40px 15px;
@@ -349,8 +349,8 @@ section h2 {
 }
 /* End of Services */
 
-/* Start of Portfolio */
-#Portfolio {
+/* Start of Portfoilo */
+#Portfoilo {
   padding: 100px 0px 70px;
   text-align: center;
 }
@@ -413,7 +413,6 @@ section h2 {
   background-color: #F1F1F1;
   padding: 100px 0;
   text-align: center;
-  /* margin: auto; */
 }
 .num {
   width: 25%;
@@ -438,3 +437,93 @@ section h2 {
   font-weight: 600;
 }
 /* End of Numbers */
+
+/* Start of Feedback */
+#Testimonial {
+  padding: 100px 0;
+  overflow: hidden;
+}
+#Testimonial h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.Feedback {
+  width: 65%;
+  background-color: #F1F1F1;
+  margin: auto;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  padding: 40px;
+  overflow: hidden;
+  border-radius: 1%;
+}
+.Feedback-image {
+  width: 20%;
+  float: left;
+  margin: 12px auto;
+  position: relative;
+}
+.Feedback-image::before {
+  content: "";
+  background-color: #ff305b;
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  transform: rotate(50deg);
+  z-index: 0;
+}
+.Feedback-image img {
+  width: 70%;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.Feedback-content {
+  float: left;
+  width: 80%;
+}
+.Feedback-content h3 {
+  color: #333333;
+  font-size: 26px;
+  line-height: 28.6px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.Feedback-content a {
+  color: #777;
+  font-size: 15px;
+  line-height: 16.5px;
+  font-weight: 600;
+}
+.Feedback-content p {
+  color: #555555;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+.stars i {
+  color: gold;
+}
+.dots {
+  margin: auto;
+  width: 70px;
+  padding-top: 15px;
+}
+.dot {
+  background-color: #FF305B;
+  width: 25px;
+  height: 10px;
+  border-radius: 25%;
+  float: left;
+  margin-inline: 5px;
+}
+.half-dot {
+  border: solid 1px #FF305B;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  float: left;
+}
+/* End of Feedback */
