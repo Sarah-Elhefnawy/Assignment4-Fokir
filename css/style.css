@@ -614,6 +614,7 @@ form {
   overflow: auto;
 }
 #Send {
+  display: block;
   background-color: #ff305b;
   border-color: #ff305b;
   border-radius: 4px;
