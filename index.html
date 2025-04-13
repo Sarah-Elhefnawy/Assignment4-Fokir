@@ -18,17 +18,23 @@
     <!-- Start of Navbar -->
     <nav>
         <div class="container">
-            <div class="nav-logo"><a href="#">Fokir</a></div>
-            <div class="nav-content">
-                <ul>
-                    <li><a href="#"><span style="color:#FF305B;">Home</span></a></li>
-                    <li><a href="#About"><span>About</span></a></li>
-                    <li><a href="#Services"><span>Service</span></a></li>
-                    <li><a href="#Portfoilo"><span>Portfoilo</span></a></li>
-                    <li><a href="#Testimonial"><span>Testimonial</span></a></li>
-                    <li><a href="#Blog"><span>Blog</span></a></li>
-                    <li><a href="#Contact"><span>Contact</span></a></li>
-                </ul>
+            <div class="inner-nav">
+                <div class="nav-logo md-40">
+                    <a href="#">Fokir</a>
+                </div>
+                <div class="links md-60">
+                    <ul>
+                        <li class="md-10"><a href="#" style="color:#FF305B;">Home</a></li>
+                        <li class="md-10"><a href="#About">About</a></li>
+                        <li class="md-10"><a href="#Services">Service</a></li>
+                        <li class="md-10"><a href="#Portfoilo">Portfoilo</a></li>
+                        <li class="md-10"><a href="#Testimonial">Testimonial</a></li>
+                        <li class="md-10"><a href="#Blog">Blog</a></li>
+                        <li class="md-10"><a href="#Contact">Contact</a></li>
+                        <div class="clear-fix"></div>
+                    </ul>
+                </div>
+                <div class="clear-fix"></div>
             </div>
         </div>
     </nav>
@@ -50,22 +56,25 @@
     <!-- Start of About -->
     <section id="About">
         <div class="container">
-            <div class="about-box">
-                <div class="porfile-photo">
-                    <img alt="" src="images/about.jpg">
-                    <div class="porfile-overly">
-                        <div class="social-icon">
-                            <ul>
-                                <li><a href="#facebook"><i class="fa-brands fa-solid fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                            </ul>
+            <div class="about-image md-33">
+                <div class="about-box">
+                    <div class="porfile-photo md-transform">
+                        <img alt="" src="images/about.jpg">
+                        <div class="porfile-overly">
+                            <div class="social-icon">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-solid fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                                    <div class="clear-fix"></div>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="about-content">
+            <div class="about-content md-63">
                 <h2>HELLO,</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -79,6 +88,7 @@
                     <li style="width: 60%;"><span>Job Title:</span> Backend Developer</li>
                     <li style="width: 40%;"><span>Age:</span> 23</li>
                     <li style="width: 60%;"><span>E-mail:</span> sarahelhefnawy0@gmail.com</li>
+                    <div class="clear-fix"></div>
                 </ul>
                 <div class="about-buttons">
                     <a href="#">Download CV <i class="fa fa-download"></i> </a>
@@ -132,13 +142,16 @@
             <h2>Our Protfolio</h2>
             <div class="box"></div>
             <div class="portfolio-buttons">
-                <button class="active">All</button>
-                <button>Graphic</button>
-                <button>Web Design</button>
-                <button>Branding</button>
+                <ul>
+                    <li class="active"><span>ALL</span></li>
+                    <li><span>Graphic</span></li>
+                    <li><span>Web Design</span></li>
+                    <li><span>Branding</span></li>
+                    <div class="clear-fix"></div>
+                </ul>
             </div>
             <div class="protfolio-cards">
-                <div class="card">
+                <div class="card md-50 lg-33">
                     <img src="./images/1.jpg" alt="">
                     <div class="layer">
                         <i class="fa-solid fa-file-image"></i>
@@ -176,6 +189,7 @@
                 </div>
                 <div class="clear-fix"></div>
             </div>
+            <div class="clear-fix"></div>
         </div>
     </section>
     <!-- End of Protfolio -->

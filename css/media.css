@@ -16,9 +16,14 @@
     .md-60 {
         width: 60%;
     }
+    .md-63 {
+        width: 63.333%;
+    }
+
     .md-50 {
         width: 50%;
     }
+
     .md-40 {
         width: 40%;
     }
@@ -41,6 +46,10 @@
 
     .md-10 {
         width: 10%;
+    }
+
+    .md-transform {
+        transform: translateY(24px) translateX(24px);
     }
 }
 
