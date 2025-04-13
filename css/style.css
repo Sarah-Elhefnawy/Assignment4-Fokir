@@ -33,23 +33,40 @@ section h2 {
   text-align: center;
 }
 
-.box {
-  width: 100px;
-  height: 11px;
-  border-top: #FF305B 1px solid;
-  border-bottom: #FF305B 1px solid;
-  margin: auto;
-  margin-bottom: 30px;
-  position: relative;
+#Services h2::before,
+#Portfoilo h2::before,
+#Testimonial h2::before,
+#Blog h2::before,
+#Contact h2::before {
+  content: "";
+  top: 40px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  border-color: #ff305b;
+  border-style: solid;
+  border-width: 1px 0;
+  bottom: 0;
+  padding: 4px 0 5px;
+  width: 70px;
 }
 
-.box::after {
-  content: "____________________";
+#Services h2::after,
+#Portfoilo h2::after,
+#Testimonial h2::after,
+#Blog h2::after,
+#Contact h2::after {
+  content: "";
+  top: 45px;
+  left: 0;
+  margin: 0 auto;
   position: absolute;
-  bottom: 1px;
-  left: -35px;
-  color: #FF305B;
-  margin: auto;
+  right: 0;
+  background-color: #ff305b;
+  bottom: 5px;
+  height: 1px;
+  width: 160px;
 }
 
 /* Start of navbar */
@@ -92,11 +109,18 @@ nav {
   transition: all 0.5s;
 }
 
-/* .links li { */
-li {
+/* li { */
+.links li {
+  /* background-color: #f61845; */
   width: 100%;
   margin: 10px;
   float: left;
+}
+
+@media (min-width: 768px) {
+  li.css-10 {
+    width: 10%;
+  }
 }
 
 .links a:hover {
@@ -119,7 +143,10 @@ header {
   margin: auto;
   line-height: 80px;
   color: aliceblue;
-  padding-top: 25%;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
   font-size: 25px;
 }
 
@@ -147,7 +174,7 @@ h1 {
   text-transform: capitalize;
 }
 
-/* .header-content h4::after {
+.header-content h4::after {
     content: "";
     animation: textTransition 4s infinite ease-in-out;
     border-right: #FF305B solid;
@@ -231,13 +258,14 @@ h1 {
     100% {
       content: "Dev";
     }
-} */
+}
 /* End of header */
 
 /* Start of About */
 #About {
   padding: 100px 0px 125px;
 }
+
 .about-image {
   width: 100%;
   float: left;
@@ -290,8 +318,8 @@ h1 {
 }
 
 .about-box .social-icon li {
-  width: 10%;
   float: left;
+  padding-right: 10px;
 }
 
 .about-box .social-icon li a {
@@ -344,7 +372,6 @@ h1 {
 
 .about-content li {
   float: left;
-  margin: 0;
   padding: 15px 0 5px 0;
 }
 
@@ -354,11 +381,11 @@ h1 {
 }
 
 .about-buttons a {
-  display: inline-block;
+  /* display: inline-block; */
   background-color: #FF305B;
   color: white;
-  border-radius: 5%;
-  margin-top: 10px;
+  border-radius: 4px;
+  margin: 10px;
   padding: 10px 24px;
   transition: all 5s ease-in-out;
 }
@@ -375,6 +402,10 @@ h1 {
   background-color: #F1F1F1;
   padding: 100px 0px 54px;
   text-align: center;
+}
+
+.services {
+  padding-top: 20px;
 }
 
 .single-service {
@@ -425,6 +456,7 @@ h1 {
   text-align: center;
   float: left;
   width: 100%;
+  padding-top: 20px;
 }
 
 .portfolio-buttons ul {
@@ -433,12 +465,12 @@ h1 {
 }
 
 .portfolio-buttons li {
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
   float: left;
-  width: 12%;
-  margin: 0;
+  padding-inline: 10px;
 }
 
 .portfolio-buttons li:hover {
@@ -540,7 +572,7 @@ h1 {
 }
 
 .Feedback {
-  width: 75%;
+  width: 85%;
   background-color: #F1F1F1;
   margin: auto;
   font-size: 16px;
@@ -638,6 +670,10 @@ h1 {
   padding: 100px 0 70px;
 }
 
+.blogs {
+  padding-top: 20px;
+}
+
 .youtube {
   position: relative;
   width: 100%;
@@ -657,6 +693,7 @@ h1 {
   width: 100%;
   background-color: #fff;
   float: left;
+  margin: 10px 0;
 }
 
 .blog img {
@@ -698,6 +735,7 @@ h1 {
 form {
   width: 65%;
   margin: auto;
+  padding-top: 20px;
 }
 
 #Name,
@@ -711,6 +749,7 @@ form {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 #Name {
   margin-right: 2.5%;
 }
